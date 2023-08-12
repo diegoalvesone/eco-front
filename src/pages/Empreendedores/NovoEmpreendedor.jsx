@@ -41,7 +41,7 @@ export function NovoEmpreendedor() {
     formData.append("numero", data.numero);
 
     axios
-      .post("http://localhost:3001/empreendedores", formData)
+      .post("https://ecommerce-back-o6lv.onrender.com/empreendedores", formData)
       .then((response) => {
         toast.success("Empreendedor adicionado com sucesso.", {
           position: "bottom-right",

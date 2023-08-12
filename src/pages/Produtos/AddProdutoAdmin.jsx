@@ -18,7 +18,7 @@ export function AddProdutoAdmin() {
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/empreendedores`,
+        axios.get(`https://ecommerce-back-o6lv.onrender.com/empreendedores`,
             {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -48,7 +48,7 @@ export function AddProdutoAdmin() {
         formData.append("usuarioId", data.usuarioId);
 
         axios
-            .post("http://localhost:3001/produtos", formData, {
+            .post("https://ecommerce-back-o6lv.onrender.com/produtos", formData, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

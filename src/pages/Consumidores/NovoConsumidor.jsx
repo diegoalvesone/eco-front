@@ -39,7 +39,7 @@ export function NovoConsumidor() {
     formData.append("numero", data.numero);
 
     axios
-      .post("http://localhost:3001/consumidores", formData)
+      .post("https://ecommerce-back-o6lv.onrender.com/consumidores", formData)
       .then((response) => {
         toast.success("Consumidor adicionado com sucesso.", {
           position: "bottom-right",

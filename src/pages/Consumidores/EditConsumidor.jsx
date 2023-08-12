@@ -40,7 +40,7 @@ export function EditConsumidor() {
         formData.append("rua", data.rua);
         formData.append("numero", data.numero);
 
-        axios.put(`http://localhost:3001/consumidores/${id}`, formData, {
+        axios.put(`https://ecommerce-back-o6lv.onrender.com/consumidores/${id}`, formData, {
             headers: {
 
                 Authorization: `Bearer ${autenticacao.token}`,
@@ -62,7 +62,7 @@ export function EditConsumidor() {
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/consumidores/${id}`, {
+        axios.get(`https://ecommerce-back-o6lv.onrender.com/consumidores/${id}`, {
             headers: {
                 Authorization: `Bearer ${autenticacao.token}`,
             }
